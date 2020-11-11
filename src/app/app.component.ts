@@ -29,6 +29,8 @@ export class AppComponent implements AfterViewInit {
 
 
   ngAfterViewInit(): void {
+    this.myCanvas.nativeElement.width = this.canvasWidth;
+    this.myCanvas.nativeElement.height = this.canvasHeight;
     this.context = this.myCanvas.nativeElement.getContext('2d');
     this.imgElement = this.img.nativeElement;
 
@@ -49,6 +51,10 @@ export class AppComponent implements AfterViewInit {
       this.animate();
       this.isFistAction = false;
     }
+
+    setTimeout(() => {
+      this.stop();
+    }, 1500);
 
   }
 

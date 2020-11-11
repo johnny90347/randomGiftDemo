@@ -1,6 +1,36 @@
-canvas{border:1px solid red;}
 
-img{
-  width: 100px;
-  height: 100px;
+#lottery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .background{
+    position: relative;
+    .giftBox{
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+
+  canvas{
+    // border:1px solid red;
+    position: absolute;
+    left: 151px;
+    top: 182px;
+  }
+
+  .btn{
+    background-color: cornflowerblue;
+    width: 150px;
+    height: 80px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-size: 30px;
+  }
 }
+
+
+
+

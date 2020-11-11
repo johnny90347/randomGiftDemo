@@ -1,4 +1,11 @@
-<canvas #myCanvas width=300 height=300></canvas>
-<img #img [src]="src" (load)="afterLoading()" style='display: none;'>
-<div (click)="start()">開始</div>
-<div (click)="stop()">停止</div>
+<div id="lottery">
+  <div class="background">
+    <img class="giftBox" src="assets/giftBox.png">
+    <canvas #myCanvas></canvas>
+  </div>
+
+
+  <img #img [src]="src" (load)="afterLoading()" style='display: none;'>
+  <div class="btn" (click)="start()">開始</div>
+  <!-- <div (click)="stop()">停止</div> -->
+</div>
